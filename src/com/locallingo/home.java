@@ -7,36 +7,32 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
- 
+
 public class home extends Activity {
-    // Initializing variables
-    EditText inputName;
-    EditText inputEmail;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
- 
-        inputName = (EditText) findViewById(R.id.name);
-        inputEmail = (EditText) findViewById(R.id.email);
-        Button btnNextScreen = (Button) findViewById(R.id.btnNextScreen);
- 
-        //Listening to button event
-        btnNextScreen.setOnClickListener(new View.OnClickListener() {
- 
-            public void onClick(View arg0) {
-                //Starting a new Intent
-                Intent nextScreen = new Intent(getApplicationContext(), lingo.class);
- 
-                //Sending data to another Activity
-                nextScreen.putExtra("name", inputName.getText().toString());
-                nextScreen.putExtra("email", inputEmail.getText().toString());
- 
-                Log.e("n", inputName.getText()+"."+ inputEmail.getText());
- 
-                startActivity(nextScreen);
- 
-            }
+        
+        Button btnHomeLingoList = (Button) findViewById(R.id.btnHomeLingoList);
+        Button btnHomeAddLingo = (Button) findViewById(R.id.btnHomeAddLingo);
+        
+        btnHomeLingoList.setOnClickListener(new View.OnClickListener() {
+        	
+        	public void onClick(View btnLingoList) {
+        		Intent lingoList = new Intent(getApplicationContext(), lingo_list.class);
+        		startActivity(lingoList);
+        	}
         });
+
+        btnHomeAddLingo.setOnClickListener(new View.OnClickListener() {
+	
+        	public void onClick(View btnLingoList) {
+        		Intent add_lingo = new Intent(getApplicationContext(), add_lingo.class);
+        		startActivity(add_lingo);
+        	}
+        });
+
     }
 }

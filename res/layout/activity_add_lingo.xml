@@ -7,7 +7,7 @@
     
     <TextView android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Enter your Lingo."
+            android:text="@string/EnterLingo"
             android:textSize="25dip"
             android:gravity="center"
             android:layout_margin="15dip"/>
@@ -25,7 +25,7 @@
     <TextView
         	android:layout_width="fill_parent"
         	android:layout_height="wrap_content"
-        	android:text="Dictionary Lingo: " />
+        	android:text="Dictionary Definition: " />
     <EditText 
         	android:id="@+id/dictionaryWord"
             android:layout_width="fill_parent"

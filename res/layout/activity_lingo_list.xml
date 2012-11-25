@@ -2,11 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
    android:orientation="vertical" 
    android:layout_width="fill_parent"
-   android:layout_height="fill_parent">
+   android:layout_height="fill_parent"
+   android:background="@drawable/list" >
     
    <ListView 
-      android:id="@+id/listView1" 
+      android:id="@id/android:list" 
       android:layout_height="fill_parent"
       android:layout_width="fill_parent" />
+   
+   <TextView
+       android:id="@id/android:empty"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:layout_gravity="center_vertical"
+       android:text="@string/main_no_items" />
 
 </LinearLayout>

@@ -8,35 +8,57 @@
   <TextView android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Thank you for your contribution!"
-            android:textSize="20dip"
+            android:textSize="18dip"
             android:gravity="center"
+            android:textColor="#CCCCCC"
             android:layout_margin="15dip"/>
-
-  <TextView
+  
+   <TextView
       android:id="@+id/txtName"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:layout_gravity="center"
+      android:textColor="#FFFFFF"
       android:layout_margin="15dip"
+      android:gravity="center"
       android:textSize="18dip" />
+   
+  <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="has dub thee"
+            android:textColor="#CCCCCC"
+            android:textSize="15dip"
+            android:gravity="center"
+            android:layout_margin="15dip"/>
  
   <TextView android:id="@+id/txtDictionaryWord"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dip"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
             android:textSize="18dip"/>
+  
+    <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#CCCCCC"
+            android:text="and will now be known as"
+            android:textSize="15dip"
+            android:gravity="center"
+            android:layout_margin="15dip"/>
   
   <TextView android:id="@+id/txtLingoWord"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dip"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
             android:textSize="18dip"/>
- 
-  <Button android:id="@+id/btnClose"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dip"
-            android:text="Close"/>
 
+  <Button
+      android:id="@+id/btnClose"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="15dip"
+      android:text="Close" />
     
 </LinearLayout>

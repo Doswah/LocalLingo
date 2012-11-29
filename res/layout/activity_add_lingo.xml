@@ -8,50 +8,66 @@
     <TextView android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/EnterLingo"
-            android:textSize="25dip"
+            android:textColor="#CCCCCC"
+            android:textSize="20dip"
             android:gravity="center"
             android:layout_margin="15dip"/>
     
     <TextView 
         	android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:textColor="#CCCCCC"
             android:text="Name: "/>
 	<EditText
         	android:id="@+id/name"
         	android:layout_width="fill_parent"
         	android:layout_height="wrap_content"
-        	android:layout_marginBottom="10dip" />
+        	android:layout_marginBottom="0dip" />
    
     <TextView
         	android:layout_width="fill_parent"
         	android:layout_height="wrap_content"
+        	android:textColor="#CCCCCC"
         	android:text="Dictionary Definition: " />
     <EditText 
         	android:id="@+id/dictionaryWord"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dip"/>
+            android:layout_marginBottom="0dip"/>
     
     <TextView
         	android:layout_width="fill_parent"
         	android:layout_height="wrap_content"
+        	android:textColor="#CCCCCC"
         	android:text="Your Local Lingo: " />
     <EditText 
         	android:id="@+id/lingoWord"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dip"/>
+            android:layout_marginBottom="0dip"/>
     
     <Button android:id="@+id/btnNextScreen"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Submit Lingo"
-            android:layout_marginTop="15dip"/>
+            android:layout_marginTop="5dip"/>
+    
+    <Button android:id="@+id/btnShowLocation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Display Current Location"
+            android:layout_marginTop="5dip"/>
+    <TextView
+        	android:id="@+id/gpsLoc"
+        	android:layout_width="fill_parent"
+        	android:gravity="center"
+        	android:layout_height="wrap_content"
+        	android:layout_marginBottom="0dip" />
     
     <Button android:id="@+id/btnLingoList"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="See Local Lingos!"
-            android:layout_marginTop="15dip"/>
+            android:layout_marginTop="0dip"/>
     
 </LinearLayout>

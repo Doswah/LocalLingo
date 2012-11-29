@@ -28,7 +28,7 @@
             android:textColor="#CCCCCC"
             android:textSize="15dip"
             android:gravity="center"
-            android:layout_margin="15dip"/>
+            android:layout_margin="13dip"/>
  
   <TextView android:id="@+id/txtDictionaryWord"
             android:layout_width="fill_parent"
@@ -41,10 +41,10 @@
     <TextView android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textColor="#CCCCCC"
-            android:text="and will now be known as"
+            android:text="to be now be known as"
             android:textSize="15dip"
             android:gravity="center"
-            android:layout_margin="15dip"/>
+            android:layout_margin="13dip"/>
   
   <TextView android:id="@+id/txtLingoWord"
             android:layout_width="fill_parent"

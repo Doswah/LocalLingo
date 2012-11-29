@@ -4,14 +4,14 @@ public class Lingo {
 	private String Name;
 	private String D_Lingo;
 	private String L_Lingo;
-	private int longitude;
-	private int lattitude;
+	private double longitude;
+	private double lattitude;
 	
 	public Lingo() {
 		super();
 	}
 
-	public Lingo(String Name, String D_Lingo, String L_Lingo, int lattitude, int longitude) {
+	public Lingo(String Name, String D_Lingo, String L_Lingo, double lattitude, double longitude) {
 		super();
 		this.Name = Name;
 		this.D_Lingo = D_Lingo;
@@ -39,11 +39,11 @@ public class Lingo {
 		return L_Lingo;
 	}
 	
-	public int getLong() {
+	public double getLong() {
 		return longitude;
 	}
 	
-	public int getLatt() {
+	public double getLatt() {
 		return lattitude;
 	}
 	
@@ -60,11 +60,11 @@ public class Lingo {
 		this.L_Lingo = L_Lingo;
 	}
 	
-	public void setLong(int longitude) {
+	public void setLong(double longitude) {
 		this.longitude = longitude;
 	}
 	
-	public void setLatt(int lattitude) {
+	public void setLatt(double lattitude) {
 		this.lattitude = lattitude;
 	}
 	

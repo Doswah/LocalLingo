@@ -23,39 +23,27 @@ public class lingo_list extends ListActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_lingo_list);
-		s_lingos = new ArrayList<Lingo>();
-		this.m_adapter = new LingoAdapter(this, R.layout.row, s_lingos);
-		setListAdapter(this.m_adapter);
-	
-		//ListView listView1 = (ListView) findViewById(R.id.listView1);
-		//Lingo[] items = { 
-		//      new Lingo("Damo", "Sprinkles", "Jimmys", 6,25), 
-		//        new Lingo("Funboat", "Kauaian", "Kauai Native", 15, 29),
-		//};
-		//ArrayAdapter<Lingo> adapter = new ArrayAdapter<Lingo>(this,
-		//            android.R.layout.simple_list_item_1, items);
-		// 
-		//listView1.setAdapter(adapter);
-      
-	
-		/* 
-		 * FUNCTIONS TO DOWNLOAD SERVER INFO 
-		 */
-			
-			viewLingos = new Runnable() {
-				public void run() {
-					getLingos();				
-				}
-			};
 		
-			Thread thread = new Thread(null, viewLingos, "MagnetoBackground");
-				thread.start();
-				m_ProgressDialog = ProgressDialog.show(lingo_list.this, 
-						"Hold your horses...", "PG did not code this...", true);
-	}
-
+		s_lingos = new ArrayList<Lingo>();	// List to hold 'Lingo' objects
+		
+		/* Create ListView Adapter */
+		this.m_adapter = new LingoAdapter(this, R.layout.row, s_lingos);	
+		setListAdapter(this.m_adapter);  
 	
-	private Runnable returnRes = new Runnable() {
+		viewLingos = new Runnable() {
+			public void run() {
+				getLingos();				
+			}
+		};
+		
+		/* Downloading from server dialog */
+		Thread thread = new Thread(null, viewLingos, "MagnetoBackground");
+			thread.start();
+			m_ProgressDialog = ProgressDialog.show(lingo_list.this, 
+					"Hold your horses...", "PG did not code this...", true);
+		}
+
+		private Runnable returnRes = new Runnable() {
 		
 		public void run() {
 			if(s_lingos != null && s_lingos.size() > 0) {
@@ -71,6 +59,7 @@ public class lingo_list extends ListActivity {
 	private void getLingos(){
 		try{
 			s_lingos = new ArrayList<Lingo>();
+		
 			
 			Lingo L1 = new Lingo();
 			L1.setName("Damo");

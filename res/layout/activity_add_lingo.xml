@@ -17,25 +17,14 @@
         	android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textColor="#CCCCCC"
-            android:text="Name: "/>
+            android:text="User Name: "/>
 	<EditText
         	android:id="@+id/name"
         	android:layout_width="fill_parent"
         	android:layout_height="wrap_content"
         	android:layout_marginBottom="0dip" />
    
-    <TextView
-        	android:layout_width="fill_parent"
-        	android:layout_height="wrap_content"
-        	android:textColor="#CCCCCC"
-        	android:text="Dictionary Definition: " />
-    <EditText 
-        	android:id="@+id/dictionaryWord"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="0dip"/>
-    
-    <TextView
+	<TextView
         	android:layout_width="fill_parent"
         	android:layout_height="wrap_content"
         	android:textColor="#CCCCCC"
@@ -45,12 +34,26 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="0dip"/>
+	
+    <TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:textColor="#CCCCCC"
+        	android:text="Definition of Lingo: " />
+    <EditText 
+        	android:id="@+id/dictionaryWord"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"/>
+    
+    
     
     <Button android:id="@+id/btnNextScreen"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Submit Lingo"
-            android:layout_marginTop="5dip"/>
+            android:layout_marginTop="5dip"
+            />
     
     <Button android:id="@+id/btnShowLocation"
             android:layout_width="fill_parent"
@@ -61,6 +64,8 @@
         	android:id="@+id/gpsLoc"
         	android:layout_width="fill_parent"
         	android:gravity="center"
+        	android:textColor="#CCCCCC"
+            android:textSize="20dip"
         	android:layout_height="wrap_content"
         	android:layout_marginBottom="0dip" />
     
